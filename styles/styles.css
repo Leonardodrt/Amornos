@@ -6,6 +6,10 @@
     --test: black;
     --default_horizontal_margin: 50px; 
     --default_vertical_margin: 50px; 
+    --red_gradient: radial-gradient(ellipse at center,rgba(233, 76, 76, 0.95) 0%, rgba(255, 87, 87, 0.8) 48%, rgba(255, 151, 151, 0.7) 100%);
+    --yellow_gradient: radial-gradient(ellipse at center,rgba(255, 239, 210, 1) 0%, rgba(253, 236, 202, 1) 25%, rgba(255, 249, 216, 1) 50%, rgba(254, 237, 205, 0.95) 75%, rgba(255, 220, 189, 0.85) 100%);
+    --purple_gradient: radial-gradient(ellipse at center,rgba(164, 132, 232, 1) 0%, rgba(161, 128, 230, 0.9 ) 33%, rgba(176, 144, 227, 0.7) 68%, rgba(196, 179, 228, 1) 100%);
+    --pink_gradient:  radial-gradient(ellipse at center,rgba(250, 118, 232, 1) 0%, rgba(246, 123, 210, 1) 20%, rgba(255, 123, 195, 0.9) 50%, rgba(249, 132, 212, 0.8) 76%, rgba(220, 151, 230, 0.85) 100%);
     margin: 0;
 }
 
@@ -30,6 +34,12 @@ nav {
 
 }
 
+a {
+    text-decoration: none;
+    color: var(--text_color);
+
+}
+
 /* Header styles */
 
 .logo {
@@ -49,9 +59,9 @@ nav {
     grid-template-columns: 1fr 1fr;
 }
 
-.skeleton div {
+.skeleton div a{
     display: flex;
-    gap: 20px;
+    gap: var(--default_horizontal_margin);
     align-items: center;
     justify-content: center;
     width: 50vw;
@@ -63,7 +73,18 @@ nav {
     display: inline;
 }
 
+.redgradient {
+    background: var(--red_gradient);
+}
 
-.gradient {
-    background-color: aqua;
+.yellowgradient {
+    background: var(--yellow_gradient);
+}
+
+.pinkgradient {
+    background: var(--pink_gradient);
+}
+
+.purplegradient {
+    background: var(--purple_gradient);
 }
