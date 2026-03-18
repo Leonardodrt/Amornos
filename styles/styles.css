@@ -1,16 +1,22 @@
-/* Variables */
+/* Variables and general styles, can be overwritten or modified */
 
 * {
     --background_color: #F5F5F5;
+    --text_color: #4D4D4D;
     --test: black;
     --default_horizontal_margin: 50px; 
     --default_vertical_margin: 50px; 
+    margin: 0;
 }
 
-/* General styles, can be overwritten */
 
 html {
    background-color: var(--background_color);  
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--text_color);
 }
 header {
     display: flex;
@@ -31,6 +37,33 @@ nav {
 }
 
 .nav_link {
-    
+    padding-top: 42px;
     margin: 0 20px;
+}
+
+/* Body styles */
+
+.skeleton {
+    display: grid;
+    margin-top: calc(var(--default_vertical_margin) * 2);
+    grid-template-columns: 1fr 1fr;
+}
+
+.skeleton div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 25vw;
+}
+
+.skeleton div p {
+    font-size: 32px;
+    display: inline;
+}
+
+
+.gradient {
+    background-color: aqua;
 }
