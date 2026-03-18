@@ -1,0 +1,36 @@
+/* Variables */
+
+* {
+    --background_color: #F5F5F5;
+    --test: black;
+    --default_horizontal_margin: 50px; 
+    --default_vertical_margin: 50px; 
+}
+
+/* General styles, can be overwritten */
+
+html {
+   background-color: var(--background_color);  
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+nav {
+    display: flex;
+    align-items: center;
+    margin: var(--default_vertical_margin) var(--default_horizontal_margin) 0 0;
+
+}
+
+/* Header styles */
+
+.logo {
+    margin: var(--default_vertical_margin) 0 0 var(--default_horizontal_margin);
+}
+
+.nav_link {
+    
+    margin: 0 20px;
+}
