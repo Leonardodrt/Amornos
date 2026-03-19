@@ -1,4 +1,4 @@
-const dataInicio = new Date('2023-04-04T01:00:00');
+const dataInicio = new Date('2024-04-04T01:00:00');
 
     function atualizar() {
       const agora = new Date();
@@ -7,14 +7,29 @@ const dataInicio = new Date('2023-04-04T01:00:00');
       const segundos = Math.floor((diff / 1000) % 60);
       const minutos  = Math.floor((diff / 1000 / 60) % 60);
       const horas    = Math.floor((diff / 1000 / 60 / 60) % 24);
-      const dias     = Math.floor(diff / 1000 / 60 / 60 / 24);
-      const meses    = Math.floor((dias / 31))
-      const anos     = Math.floor(dias / 365);
-      console.log(`${dias}d`);
+      let dias     = agora.getDate() - dataInicio.getDate();
+      let meses    = agora.getMonth() - dataInicio.getMonth();
+      let anos     = agora.getFullYear() - dataInicio.getFullYear();
+     
+      if (dias < 0) {
+        meses --
+        const mesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0);
+        dias += mesAnterior.getDate();
+      }
+
+      if (meses < 0) {
+        anos--;
+        meses += 12
+      }
+         
+      console.log(agora.getMonth());
+      console.log(dataInicio.getMonth());
+      console.log(dias);
+      console.log(`${anos}a ${meses}m ${dias}d ${horas}h ${minutos}m ${segundos}s`);
      // document.getElementById('relogio').textContent =
      // `${dias}d ${horas}h ${minutos}m ${segundos}s`;
     }
 
     atualizar(); // corre imediatamente
-    setInterval(atualizar, 1000); // atualiza a cada segundo
+    // setInterval(atualizar, 1000); // atualiza a cada segundo
    
