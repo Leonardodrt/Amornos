@@ -15,4 +15,7 @@
 - [ ] Futuro Page
 - [ ] Pergunta Page
 
-
+- [ ] Timer tempo page Logic
+- [ ] Gradient animations
+- [ ] Responsive gallery image page
+- [ ] Quizz Logic
