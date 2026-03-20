@@ -1,10 +1,10 @@
 # Basic Web Project
 
 - HTML, CSS, JS fundamentals;
-- Responsive Design Practice with grid and flexbox;
+- Testing responsive Design Practice with grid and flexbox;
 - Web acessibility;
 - Exploring fun gradient animations;
-- No Gen AI / Vibe coding - just typing :basecampy:;
+- No Gen AI for coding / Vibe coding - just typing :basecampy:;
 - Git terminal re-learning;
 
   ## TO DO 

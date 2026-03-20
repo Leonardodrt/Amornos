@@ -24,12 +24,19 @@ html {
     font-style: normal;
     color: var(--text_color);
 }
+
+
 header {
+    /* Header is a always a flexbox so it spans the entire screen size */
     display: flex;
     justify-content: space-between;
     align-items: start;
+
 }
+
+
 nav {
+    /* Nav is also a flexbox so images are centered */
     display: flex;
     align-items: center;
     margin: var(--default_vertical_margin) var(--default_horizontal_margin) 0 auto;
@@ -94,6 +101,20 @@ a {
 }
 
 .tempo_main {
+    /* grid so header and clock paragraph keep the same size and span the whole screen */
+    display: grid;
+    grid-template-rows: 50vh auto;
     height: 100vh;
     background: var(--red_gradient_background);
+    text-align: center;
+    font-size: 3em;
+    color: #F5F5F5;
+    
 }
+
+
+
+
+
+
+

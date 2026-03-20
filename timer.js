@@ -22,14 +22,16 @@ const dataInicio = new Date('2024-04-04T01:00:00');
         meses += 12
       }
          
-      console.log(agora.getMonth());
-      console.log(dataInicio.getMonth());
-      console.log(dias);
+
       console.log(`${anos}a ${meses}m ${dias}d ${horas}h ${minutos}m ${segundos}s`);
-     // document.getElementById('relogio').textContent =
-     // `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+      document.getElementById('relogio').textContent =
+      `${anos} Anos, ${meses} Meses, ${dias} Dias, ${horas} Horas, ${minutos} Minutos, ${segundos} Segundos`;
+
+      
     }
 
-    atualizar(); // corre imediatamente
-    // setInterval(atualizar, 1000); // atualiza a cada segundo
+    document.addEventListener('DOMContentLoaded', function() {
+      atualizar(); // corre imediatamente
+      setInterval(atualizar, 1000); // atualiza a cada segundo
+    });
    
