@@ -32,7 +32,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    margin: var(--default_vertical_margin) var(--default_horizontal_margin) 0 0;
+    margin: var(--default_vertical_margin) var(--default_horizontal_margin) 0 auto;
 
 }
 
@@ -74,6 +74,8 @@ a {
     font-size: 32px;
     display: inline;
 }
+
+
 
 .redgradient {
     background: var(--red_gradient);
