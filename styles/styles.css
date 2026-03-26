@@ -11,6 +11,8 @@
     --purple_gradient: radial-gradient(ellipse at center,rgba(164, 132, 232, 1) 0%, rgba(161, 128, 230, 0.9 ) 33%, rgba(176, 144, 227, 0.7) 68%, rgba(196, 179, 228, 1) 100%);
     --pink_gradient:  radial-gradient(ellipse at center,rgba(250, 118, 232, 1) 0%, rgba(246, 123, 210, 1) 20%, rgba(255, 123, 195, 0.9) 50%, rgba(249, 132, 212, 0.8) 76%, rgba(220, 151, 230, 0.85) 100%);
     --red_gradient_background: radial-gradient(ellipse at center,rgba(233, 76, 76, 0.75) 0%, rgba(255, 87, 87, 0.6) 48%, rgba(255, 151, 151, 0.5) 100%);
+    --pink_gradient_background:  radial-gradient(ellipse at center,rgba(250, 118, 232, 0.65) 0%, rgba(246, 123, 210, 0.65) 20%, rgba(255, 123, 195, 0.55) 50%, rgba(249, 132, 212, 0.5) 76%, rgba(220, 151, 230, 0.5) 100%);
+    --purple_gradient_background: radial-gradient(ellipse at center,rgba(164, 132, 232, 0.6) 0%, rgba(161, 128, 230, 0.6 ) 33%, rgba(176, 144, 227, 0.4) 68%, rgba(196, 179, 228, 0.35) 100%);
     margin: 0;
 
 }
@@ -27,7 +29,7 @@ html {
 
 
 header {
-    /* Header is a always a flexbox so it spans the entire screen size */
+    /* Header is a always a flexbox with space-between so it spans the entire screen size and adjusts to it*/
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -103,7 +105,7 @@ a {
 .tempo_main {
     /* grid so header and clock paragraph keep the same size and span the whole screen */
     display: grid;
-    grid-template-rows: 50vh auto;
+    grid-template-rows: 46vh auto;
     height: 100vh;
     background: var(--red_gradient_background);
     text-align: center;
@@ -112,6 +114,15 @@ a {
     
 }
 
+.futuro_main {
+    height: 100vh;
+    background: var(--pink_gradient_background);
+}
+
+.pergunta_main {
+    height: 100vh;
+    background: var(--purple_gradient_background);
+}
 
 
 
