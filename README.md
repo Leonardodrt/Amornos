@@ -16,7 +16,9 @@
 - [ ] Pergunta Page
 
 - [x] Timer tempo page Logic
+- [ ] Quizz Logic
+- [ ] Futuro page placeholder Logic
+- [ ] Gallery page Logic
 - [ ] Gradient animations
 - [ ] Responsive gallery image page
-- [ ] Quizz Logic
 - [ ] Responsive website overall
