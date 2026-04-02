@@ -145,13 +145,21 @@ a {
     color: var(--background_color);
     border:var(--background_color) 3px solid;
     width: 50vw;
-    padding: 15px 0 25px 0;
+    padding: 15px 0 20px 0;
     border-radius: 70px;
     font-size: 1em;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
     text-align: center;
     letter-spacing: 10px;
     box-shadow: rgba(0, 0, 0, 0.25 ) 3px 3px 5px;
     
+}
+
+.msg {
+    color: var(--background_color);
+    font-weight: 300;
+    margin-top: 50px;
 }
 
 .futuro_main input::placeholder {
