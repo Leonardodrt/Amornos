@@ -4,21 +4,21 @@
 - Testing responsive Design Practice with grid and flexbox;
 - Web acessibility;
 - Exploring fun gradient animations;
-- No Gen AI for coding / Vibe coding - just typing :basecampy:;
+- Gen AI only for minor details - no prompted scripts or vibe coding, just typing :basecampy:;
 - Git terminal re-learning;
 
   ## TO DO 
 
 - [x] Main page
-- [ ] Tempo page
-- [ ] Imagem page
-- [ ] Futuro Page
-- [ ] Pergunta Page
+- [x] Tempo page
+- [x] Imagem page
+- [x] Futuro Page
+- [x] Pergunta Page
 
 - [x] Timer tempo page Logic
-- [ ] Quizz Logic
-- [ ] Futuro page placeholder Logic
-- [ ] Gallery page Logic
+- [x] Quizz Logic
+- [x] Futuro page placeholder Logic
+- [x] Gallery page Logic
 - [ ] Gradient animations
 - [ ] Responsive gallery image page
 - [ ] Responsive website overall
