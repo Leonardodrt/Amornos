@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     
     <title>Amor Para Nós</title>
-    
+    <script src="../perguntas.js"></script>
 </head>
 <body class="pergunta_main">
         <header>
@@ -28,12 +28,12 @@
         </header>
         <main>
             
-                <p>A primeira prenda?</p>
+                <p id="question">A primeira prenda?</p>
                 <div class="input_box">
-                    <input type="button"/>
-                    <input type="button"/>
-                    <input type="button"/>
-                    <input type="button"/>
+                    <input id="A" onclick="SwitchQuizz('A')"  value="" type="button"/>
+                    <input id="B" onclick="SwitchQuizz('B')" value="" type="button"/>
+                    <input id="C" onclick="SwitchQuizz('C')" value="" type="button"/>
+                    <input id="D" onclick="SwitchQuizz('D')" value="" type="button"/>
                 </div>
             
         </main>
